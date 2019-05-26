@@ -1,7 +1,7 @@
 import React from 'react';
-import { push as Menu } from 'react-burger-menu'
-import './menu.css'
-import logo from "./icon.png"
+import { elastic as Menu } from 'react-burger-menu';
+import '../components/Assets/Css/menu.css';
+import logo from "./Assets/Img/icon.png";
  
 class Burgermenu extends React.Component {
   showSettings (event) {
@@ -14,10 +14,9 @@ class Burgermenu extends React.Component {
       <Menu 
       isOpen= { false }
       width={ 280 }
-      customBurgerIcon={ <img src={logo} /> }
-      >
+      customBurgerIcon={ <img src={logo} alt="logo" /> }>
         <a id="home" className="menu-item" href="/">Home</a>
-        <a id="about" className="menu-item" href="/about">About</a>
+        <a id="slider" className="menu-item" href="/slider">Slider</a>
         <a id="contact" className="menu-item" href="/contact">Contact</a>
         <a onClick={ this.showSettings } className="menu-item--small" href="/">Settings</a>
       </Menu>
