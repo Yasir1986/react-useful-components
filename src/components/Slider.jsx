@@ -14,6 +14,7 @@ class SimpleSlider extends React.Component {
       <Slider {...settings}>
         <div>
           <h3>1</h3>
+         <p>add img here</p> 
         </div>
         <div>
           <h3>2</h3>
