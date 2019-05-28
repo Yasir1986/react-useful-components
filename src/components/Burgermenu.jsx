@@ -17,7 +17,7 @@ class Burgermenu extends React.Component {
       customBurgerIcon={ <img src={logo} alt="logo" /> }>
         <a id="home" className="menu-item" href="/">Home</a>
         <a id="slider" className="menu-item" href="/slider">Slider</a>
-        <a id="contact" className="menu-item" href="/contact">Contact</a>
+        <a id="map" className="menu-item" href="/map">Google Map</a>
         <a onClick={ this.showSettings } className="menu-item--small" href="/">Settings</a>
       </Menu>
       </div>

@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import "../components/Assets/Css/slick.css";
 import "../components/Assets/Css/slider.css";
 import styled from "styled-components";
+import Burgermenu from "./Burgermenu.jsx";
+
 
 class SimpleSlider extends React.Component {
   render() {
@@ -15,6 +17,7 @@ class SimpleSlider extends React.Component {
     };
     return (
       <div>
+        <Burgermenu />
         <Styledh1>
       <h2>React Slider</h2>
       </Styledh1>
