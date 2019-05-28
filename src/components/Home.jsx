@@ -1,6 +1,5 @@
 import React from 'react';
 import Burgermenu from "./Burgermenu.jsx";
-
 import styled from "styled-components";
  
 class Home extends React.Component {
