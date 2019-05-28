@@ -1,11 +1,10 @@
 import React from 'react';
 import Home from "./components/Home.jsx";
 import Slider from "./components/Slider.jsx";
-import Map from "./components/GoogleMap.jsx";
 import { BrowserRouter as Router, Route  } from "react-router-dom";
-
+import GoogleMap from "./components/GoogleMap.jsx";
 import './App.css';
-import GoogleMap from './components/GoogleMap.jsx';
+
 
 function App() {
   return (

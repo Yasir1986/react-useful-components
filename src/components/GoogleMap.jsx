@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
+import Burgermenu from "./Burgermenu.jsx";
+import styled from "styled-components";
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -14,10 +16,12 @@ class Map extends Component {
 
   render() {
     return (
-    
-      // Important! Always set the container height explicitly
-      <div style={{ height: '100vh', width: '100%' }}>
+        <div>
+        <Burgermenu />
+      <StyledMap> 
+      <StyledTitle>
           <h1>Google Map</h1>
+          </StyledTitle>
         <GoogleMapReact
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
@@ -29,9 +33,20 @@ class Map extends Component {
             text="My Marker"
           />
         </GoogleMapReact>
+        </StyledMap>
       </div>
     );
   }
 }
 
 export default Map;
+
+const StyledTitle = styled.div`
+    text-align: center;
+`;
+
+const StyledMap = styled.div`
+    height: 80vh;
+    width: 80%;
+    margin: auto;
+`;
