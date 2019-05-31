@@ -18,7 +18,7 @@ class Burgermenu extends React.Component {
         <a id="home" className="menu-item" href="/">Home</a>
         <a id="slider" className="menu-item" href="/slider">Slider</a>
         <a id="map" className="menu-item" href="/map">Google Map</a>
-        <a id="card" className="menu-item" href="/card">Credit Card</a>
+        <a id="date" className="menu-item" href="/date">Date Picker</a>
 
         <a onClick={ this.showSettings } className="menu-item--small" href="/">Settings</a>
       </Menu>
