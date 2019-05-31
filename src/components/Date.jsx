@@ -14,6 +14,7 @@ import styled from "styled-components";
          <h2>Date Picker</h2>
            <p>Please type a day:</p>
       <DayPickerInput onDayChange={day => console.log(day)} />
+    
      </Wrapper>
     );
   }
